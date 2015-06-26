@@ -1,0 +1,13 @@
+﻿{
+    "authors": [ "Fresh Egg" ],
+    "dependencies": {
+    },
+    "description": "Provides base logging contracts",
+    "frameworks": {
+        "dnx451": { }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "logging" ],
+    "version": "1.0.0-*"
+}

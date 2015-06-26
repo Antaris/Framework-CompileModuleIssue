@@ -1,0 +1,13 @@
+﻿{
+    "authors": [ "Fresh Egg" ],
+    "dependencies": {
+    },
+    "description": "Provides common types used throughout the Framework.",
+    "frameworks": {
+        "dnx451": { }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "" ],
+    "version": "1.0.0-*"
+}
