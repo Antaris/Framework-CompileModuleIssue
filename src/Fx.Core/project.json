@@ -2,7 +2,7 @@
     "authors": [ "Fresh Egg" ],
     "dependencies": {
         "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
-        "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
+        "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta4",
         "Fx.Common": "",
         "Fx.Core.Contracts": ""
     },

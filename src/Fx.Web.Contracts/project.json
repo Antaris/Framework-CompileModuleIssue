@@ -1,15 +1,15 @@
-{
+﻿{
     "authors": [ "Fresh Egg" ],
     "dependencies": {
-        "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
+        "Microsoft.AspNet.Http.Abstractions": "1.0.0-beta4",
         "Fx.Common": ""
     },
-    "description": "Provides core interfaces, abstractions and types consumed by the Framework",
+    "description": "Provides common abstractions and types used for Web projects",
     "frameworks": {
         "dnx451": { }
     },
     "licenseUrl": "",
     "projectUrl": "",
-    "tags": [ "core" ],
+    "tags": [ "web" ],
     "version": "1.0.0-*"
 }
