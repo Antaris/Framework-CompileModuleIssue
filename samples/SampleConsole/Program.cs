@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Fx;
-using Fx.Data;
-using Microsoft.Data.Entity;
-using Microsoft.Framework.DependencyInjection;
-using Microsoft.Framework.Configuration;
-using Microsoft.Dnx.Runtime;
-
-namespace SampleConsole
+﻿namespace SampleConsole
 {
+    using System;
+    using System.Linq;
+    using Microsoft.Framework.DependencyInjection;
+    using Microsoft.Framework.Configuration;
+    using Microsoft.Dnx.Runtime;
+    using Fx;
+
     public class Program
     {
         private readonly IServiceProvider _baseServiceProvider;
@@ -33,29 +29,8 @@ namespace SampleConsole
                 .AddJsonFile(@".\databases.json")
                 .Build();
 
-            var host = new Host<HostModule>(provider, config);
-
-            host.ConfigureEntityFramework(
-                // Add support for the InMemory database.
-                b => b.AddInMemoryDatabase(),
-                // Use the InMemry database.
-                (cb, b) => b.UseInMemoryDatabase()
-            );
-
-            var servicesProvider = host.ConfigureServices(services);
-
-            var userService = servicesProvider.GetRequiredService<Fx.Security.IUserService>();
-
-            int userId = userService.Create(new Fx.Security.User
-            {
-                Forename = "Matt",
-                Surname = "Abbott",
-                Username = "admin",
-                Conventions = "admin,public"
-            });
-
-            var user = userService.Get(userId);
-            Console.WriteLine($"{user.Forename} {user.Surname}");
+            Console.WriteLine(provider.GetModules().Count());
+            Console.ReadKey();
         }
     }
 }

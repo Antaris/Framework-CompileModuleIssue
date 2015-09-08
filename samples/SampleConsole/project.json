@@ -12,15 +12,7 @@
         "Microsoft.Framework.Configuration.EnvironmentVariables": "1.0.0-beta7",
         "Fx.Common": "",
         "Fx.Core.Contracts": "",
-        "Fx.Core": "",
-        "Fx.Data.Contracts": "",
-        "Fx.Data": "",
-        "Fx.Hosting":  "",
-        "Fx.Logging.Contracts": "",
-        "Fx.Logging": "",
-        "Fx.Security.Contracts": "",
-        "Fx.Security": "",
-        "Fx.Web.Contracts": ""
+        "Fx.Core": ""
     },
     "description": "",
     "frameworks": {
