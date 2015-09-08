@@ -11,8 +11,7 @@
         "Microsoft.Framework.Configuration.Json": "1.0.0-beta7",
         "Microsoft.Framework.Configuration.EnvironmentVariables": "1.0.0-beta7",
         "Fx.Common": "",
-        "Fx.Core.Contracts": "",
-        "Fx.Core": ""
+        "Fx.Core.Contracts": ""
     },
     "description": "",
     "frameworks": {
