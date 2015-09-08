@@ -14,6 +14,12 @@ namespace Fx
     public class CoreModule : ModuleBase
     {
         /// <inheritdoc />
+        public override int Order
+        {
+            get { return ModuleOrder.Level0; }
+        }
+
+        /// <inheritdoc />
         public override IEnumerable<Permission> GetPermissions()
         {
             yield return CorePermissions.Admin;
@@ -41,6 +47,16 @@ namespace Fx
             yield return ServiceDescriptor.Singleton<IInstanceFactory, InstanceFactory>();
             // Identity services
             yield return ServiceDescriptor.Singleton<IIdentityFactory, IdentityFactory>();
+            yield return ServiceDescriptor.Singleton<IIdentityService, DefaultIdentityService>();
+            // Security services
+            yield return ServiceDescriptor.Singleton<ISecurityService, DefaultSecurityService>();
+
+            // Work context.
+            yield return ServiceDescriptor.Scoped<IWorkContext>(p => new WorkContext()
+            {
+                Identity = p.GetRequiredService<IIdentityService>().GetForCurrent(),
+                SecurityContext = p.GetRequiredService<ISecurityService>().GetCurrentSecurityContext()
+            });
         }
     }
 }

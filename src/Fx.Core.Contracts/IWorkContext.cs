@@ -5,7 +5,6 @@
 namespace Fx
 {
     using System.Globalization;
-
     using Fx.Security;
 
     /// <summary>

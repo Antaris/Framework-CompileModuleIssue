@@ -1,0 +1,15 @@
+﻿{
+    "authors": [ "Fresh Egg" ],
+    "dependencies": {
+      "Newtonsoft.Json": "6.0.6",
+      "Fx.Common": ""
+    },
+    "description": "Provides support for generating query expressions",
+    "frameworks": {
+        "dnx46": { }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "" ],
+    "version": "1.0.0-*"
+}

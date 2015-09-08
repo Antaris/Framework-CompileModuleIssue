@@ -1,0 +1,16 @@
+﻿{
+    "authors": [ "Fresh Egg" ],
+    "dependencies": {
+        "EntityFramework.Core": "7.0.0-beta7",
+        "Fx.Data.Contracts": "",
+        "Fx.Common": ""
+    },
+    "description": "Provides shared models for users/roles and data sets.",
+    "frameworks": {
+        "dnx46": { }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "uses", "roles", "datasets", "security" ],
+    "version": "1.0.0-*"
+}

@@ -1,0 +1,10 @@
+﻿{
+    "Data": {
+        "Default": "SERVER=(localdb)DATABASE=FX-Test;INTEGRATED SECURITY=SSPI;",
+        "Versioned": {
+            "Server": "(localdb)",
+            "Database": "FX-Test",
+            "IntegratedSecurity": true
+        }
+    }
+}

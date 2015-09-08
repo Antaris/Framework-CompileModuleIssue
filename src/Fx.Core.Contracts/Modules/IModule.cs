@@ -20,9 +20,20 @@ namespace Fx
         string Name { get; }
 
         /// <summary>
+        /// Gets the order of the module.
+        /// </summary>
+        int Order { get; }
+
+        /// <summary>
         /// Gets the semantic version of the module.
         /// </summary>
         SemanticVersion Version { get; }
+
+        /// <summary>
+        /// Gets the set of datasets provided by the module.
+        /// </summary>
+        /// <returns></returns>
+        IEnumerable<DataSet> GetDataSets();
 
         /// <summary>
         /// Gets the set of permissions provided by the module.

@@ -1,0 +1,13 @@
+﻿{
+    "authors": [ "Fresh Egg" ],
+    "dependencies": {
+    },
+    "description": "Provides UI support for creating queries.",
+    "frameworks": {
+        "dnx46": { }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "" ],
+    "version": "1.0.0-*"
+}

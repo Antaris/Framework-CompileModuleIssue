@@ -37,9 +37,21 @@ namespace Fx
         }
 
         /// <inheritdoc />
+        public virtual int Order
+        {
+            get { return ModuleOrder.Level4; }
+        }
+
+        /// <inheritdoc />
         public virtual SemanticVersion Version
         {
             get { return _versionThunk.Value; }
+        }
+
+        /// <inheritdoc />
+        public virtual IEnumerable<DataSet> GetDataSets()
+        {
+            yield break;
         }
 
         /// <inheritdoc />
@@ -66,10 +78,11 @@ namespace Fx
         /// <returns>The semantic version.</returns>
         private SemanticVersion ResolveVersion()
         {
-            var versionAttribute = _assembly.GetCustomAttribute<VersionAttribute>();
-            if (versionAttribute != null)
+            SemanticVersion semver;
+            var versionAttribute = _assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>();
+            if (versionAttribute != null && SemanticVersion.TryParse(versionAttribute.InformationalVersion, out semver))
             {
-                return versionAttribute.Version;
+                return semver;
             }
 
             return new SemanticVersion(0);

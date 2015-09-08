@@ -12,6 +12,13 @@ namespace Fx.Security
     public interface IIdentityService
     {
         /// <summary>
+        /// Gets the identity of the current logged in user.
+        /// </summary>
+        /// <param name="referenceDataTime">[Optional] The reference date/time.</param>
+        /// <returns>The identity.</returns>
+        IIdentity GetForCurrent(DateTimeOffset? referenceDataTime = null);
+
+        /// <summary>
         /// Gets the identity for the given Id.
         /// </summary>
         /// <param name="id">The id of the identity.</param>

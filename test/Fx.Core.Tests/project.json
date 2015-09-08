@@ -1,0 +1,20 @@
+﻿{
+    "authors": [ "Fresh Egg" ],
+    "commands": {
+        "test": "xunit.runner.aspnet"
+    },
+    "dependencies": {
+        "Fx.Core.Contracts": "",
+        "Fx.Core": "",
+        "Fx.TestHelpers": "",
+        "xunit.runner.aspnet": "2.0.0-aspnet-*"
+    },
+    "description": "Provides unit tests for the Fx.Core package",
+    "frameworks": {
+        "dnx46": { }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "core" ],
+    "version": "1.0.0-*"
+}

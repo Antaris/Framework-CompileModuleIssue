@@ -39,7 +39,7 @@ namespace Fx
         {
             if (string.IsNullOrWhiteSpace(argument))
             {
-                throw new ArgumentException($"The parameter '{name}' cannot be null, empty or white space");
+                throw new ArgumentException($"The parameter '{name}' cannot be null, empty or white space", name);
             }
 
             return argument;

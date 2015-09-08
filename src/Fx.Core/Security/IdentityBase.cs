@@ -33,24 +33,24 @@ namespace Fx.Security
         }
 
         /// <inheritdoc />
-        public DateTimeOffset DateTimeOffset { get; protected internal set; }
+        public DateTimeOffset DateTimeOffset { get; private set; }
 
         /// <inheritdoc />
-        public string Email { get; protected internal set; }
+        public string Email { get; private set; }
 
         /// <inheritdoc />
-        public int Id { get; protected internal set; }
+        public int Id { get; private set; }
 
         /// <inheritdoc />
-        public bool IsAnonymous { get; protected internal set; }
+        public bool IsAnonymous { get; private set; }
 
         /// <inheritdoc />
-        public bool IsSystem { get; protected internal set; }
+        public bool IsSystem { get; private set; }
 
         /// <inheritdoc />
-        public string Name { get; protected internal set; }
+        public string Name { get; private set; }
 
         /// <inheritdoc />
-        public IdentityStatus Status { get; protected internal set; }
+        public IdentityStatus Status { get; private set; }
     }
 }

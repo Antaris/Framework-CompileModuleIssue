@@ -5,10 +5,13 @@
 namespace Fx.Security
 {
     using System;
+    using System.Diagnostics;
+    using System.Linq;
 
     /// <summary>
     /// Represents a convention for permission application.
     /// </summary>
+    [DebuggerDisplay("Permission Convention: {Code} ({PermissionsDebug()})")]
     public class PermissionConvention : IComparable<PermissionConvention>, IEquatable<PermissionConvention>, IComparable
     {
         private static readonly ValueComparer<PermissionConvention> Comparer = new ValueComparer<PermissionConvention>(
@@ -73,6 +76,11 @@ namespace Fx.Security
         public override int GetHashCode()
         {
             return Comparer.GetHashCode(this);
+        }
+
+        private string PermissionsDebug()
+        {
+            return string.Join(",", Permissions.Select(p => p.Code));
         }
     }
 }

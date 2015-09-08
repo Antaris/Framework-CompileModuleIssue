@@ -1,0 +1,39 @@
+{
+    "authors": [ "" ],
+    "commands": {
+        "SampleConsole": "SampleConsole"
+    },
+    "dependencies": {
+        "EntityFramework.InMemory": "7.0.0-beta7",
+        "Microsoft.Dnx.Compilation.CSharp": "1.0.0-beta7",
+        "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration.Json": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration.EnvironmentVariables": "1.0.0-beta7",
+        "Fx.Common": "",
+        "Fx.Core.Contracts": "",
+        "Fx.Core": "",
+        "Fx.Data.Contracts": "",
+        "Fx.Data": "",
+        "Fx.Hosting":  "",
+        "Fx.Logging.Contracts": "",
+        "Fx.Logging": "",
+        "Fx.Security.Contracts": "",
+        "Fx.Security": "",
+        "Fx.Web.Contracts": ""
+    },
+    "description": "",
+    "frameworks": {
+        "dnx46": {
+            "frameworkAssemblies": {
+                "System.Runtime": "",
+                "System.Threading.Tasks": "",
+                "System.Text.Encoding": ""
+            }
+        }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "" ],
+    "version": "1.0.0-*"
+}

@@ -15,7 +15,7 @@ namespace Fx.Security
         /// Initialises a new instance of <see cref="AnonymousIdentity"/>
         /// </summary>
         /// <param name="dateTimeOffset">The date/time offset to UTC.</param>
-        internal AnonymousIdentity(DateTimeOffset dateTimeOffset) 
+        public AnonymousIdentity(DateTimeOffset dateTimeOffset) 
             : base(-1, "Guest", null, dateTimeOffset, IdentityStatus.Unavailable, true, false)
         {
 

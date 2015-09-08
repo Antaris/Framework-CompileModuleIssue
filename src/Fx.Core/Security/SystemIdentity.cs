@@ -15,7 +15,7 @@ namespace Fx.Security
         /// Initialises a new instance of <see cref="SystemIdentity"/>
         /// </summary>
         /// <param name="dateTimeOffset">The date/time offset to UTC.</param>
-        internal SystemIdentity(DateTimeOffset dateTimeOffset)
+        public SystemIdentity(DateTimeOffset dateTimeOffset)
             : base(0, "System", null, dateTimeOffset, IdentityStatus.Unavailable, false, true)
         {
 

@@ -1,0 +1,19 @@
+﻿{
+    "authors": [ "Fresh Egg" ],
+    "dependencies": {
+        "EntityFramework.InMemory": "7.0.0-beta7",
+        "xunit.runner.aspnet": "2.0.0-aspnet-*",
+        "Fx.Core.Contracts": "",
+        "Fx.Core": "",
+        "Fx.Data.Contracts": "",
+        "Fx.Data": ""
+    },
+    "description": "Provides shared helper types for tests.",
+    "frameworks": {
+        "dnx46": { }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "" ],
+    "version": "1.0.0-*"
+}

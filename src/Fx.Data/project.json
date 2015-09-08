@@ -1,0 +1,26 @@
+﻿{
+    "authors": [ "Fresh Egg" ],
+    "dependencies": {
+        "Microsoft.Dnx.Runtime": "1.0.0-beta7",
+        "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-beta7",
+        "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta7",
+        "EntityFramework.Core": "7.0.0-beta7",
+        "EntityFramework.Relational": "7.0.0-beta7",
+        "Fx.Core.Contracts": "",
+        "Fx.Data.Contracts": ""
+    },
+    "description": "Provides core data services",
+    "frameworks": {
+        "dnx46": {
+            "frameworkAssemblies": {
+                "System.Runtime": "",
+                "System.Text.RegularExpressions": ""
+            }
+        }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "data" ],
+    "version": "1.0.0-*"
+}

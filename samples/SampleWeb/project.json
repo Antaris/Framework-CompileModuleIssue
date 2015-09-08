@@ -1,0 +1,48 @@
+{
+    "commands": {
+      "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
+      "db-migrate": "Fx.Data.Tools.Migrations --target Default"
+    },
+    "dependencies": {
+        "Microsoft.AspNet.Loader.IIS": "1.0.0-beta7",
+        "Microsoft.AspNet.Loader.IIS.Interop": "1.0.0-beta7",
+        "Microsoft.AspNet.Server.WebListener": "1.0.0-beta7",
+        "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration.Json": "1.0.0-beta7",
+        "EntityFramework.SqlServer": "7.0.0-beta7",
+        "Fx.Common": "",
+        "Fx.Core.Contracts": "",
+        "Fx.Core": "",
+        "Fx.Data.Contracts": "",
+        "Fx.Data": "",
+        "Fx.Data.Tools.Migrations": "",
+        "Fx.Hosting":  "",
+        "Fx.Logging.Contracts": "",
+        "Fx.Logging": "",
+        "Fx.Security.Contracts": "",
+        "Fx.Security": "",
+        "Fx.Web.Contracts": ""
+    },
+    "exclude": [
+        "wwwroot",
+        "node_modules",
+        "bower_components"
+    ],
+    "frameworks": {
+        "dnx46": {
+            "frameworkAssemblies": {
+                "System.Runtime":  ""
+            }
+        }
+    },
+    "publishExclude": [
+        "node_modules",
+        "bower_components",
+        "**.xproj",
+        "**.user",
+        "**.vspscc"
+    ],
+    "version": "1.0.0-*",
+    "webroot": "wwwroot"
+}

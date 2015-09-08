@@ -19,8 +19,10 @@ namespace Fx.Security
         /// <param name="email">The email of the identity.</param>
         /// <param name="dateTimeOffset">The date/time (with offset to UTC) reference.</param>
         /// <param name="status">The identity status.</param>
-        public Identity(int id, string name, string email, DateTimeOffset dateTimeOffset, IdentityStatus status)
-            : base(id, name, email, dateTimeOffset, status, false, false)
+        /// <param name="isAnonymous">[Optional] Flag to state whether this identity is anonymous.</param>
+        /// <param name="isSystem">[Optional] Flag to state whether this identity is a system identity.</param>
+        public Identity(int id, string name, string email, DateTimeOffset dateTimeOffset, IdentityStatus status, bool isAnonymous = false, bool isSystem = false)
+            : base(id, name, email, dateTimeOffset, status, isAnonymous, isSystem)
         { }
     }
 }

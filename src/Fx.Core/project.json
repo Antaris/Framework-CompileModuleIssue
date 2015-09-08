@@ -1,14 +1,21 @@
 ﻿{
     "authors": [ "Fresh Egg" ],
     "dependencies": {
-        "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
-        "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta4",
+        "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-beta7",
+        "Microsoft.Framework.DependencyInjection": "1.0.0-beta7",
+        "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta7",
         "Fx.Common": "",
         "Fx.Core.Contracts": ""
     },
     "description": "Implements core contracts and provides services for the Framework.",
     "frameworks": {
-        "dnx451": { }
+        "dnx46": {
+            "frameworkAssemblies": {
+                "System.Runtime": "",
+                "System.Threading.Tasks": "",
+                "System.Text.Encoding": ""
+            }
+        }
     },
     "licenseUrl": "",
     "projectUrl": "",

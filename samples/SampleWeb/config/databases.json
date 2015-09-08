@@ -1,0 +1,5 @@
+﻿{
+    "Data": {
+        "Default": "SERVER=(localdb)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\SampleWeb.mdf;Integrated Security=true;MultipleActiveResultSets=true;"
+    }
+}

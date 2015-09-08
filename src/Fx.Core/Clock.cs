@@ -11,10 +11,24 @@ namespace Fx
     /// </summary>
     public class Clock : IClock
     {
-        private Func<DateTimeOffset> _accessor = () => DateTimeOffset.UtcNow;
+        private Func<DateTimeOffset> _accessor = () => GetNormalisedDateTimeOffset();
 
         /// <inheritdoc />
         public DateTimeOffset UtcNow { get { return _accessor(); } }
+
+        /// <summary>
+        /// Gets the
+        /// </summary>
+        /// <returns></returns>
+        public static DateTimeOffset GetNormalisedDateTimeOffset()
+        {
+            var dateTime = DateTimeOffset.UtcNow;
+
+            // Removes the millisecond component from the date/time.
+            dateTime.AddTicks(-(dateTime.Ticks % TimeSpan.TicksPerMillisecond));
+
+            return dateTime;
+        }
 
         /// <summary>
         /// Fixes the clock to the given date/time until the adjustment is disposed.

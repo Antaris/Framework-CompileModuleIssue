@@ -4,7 +4,7 @@
     },
     "description": "Provides common types used throughout the Framework.",
     "frameworks": {
-        "dnx451": { }
+        "dnx46": { }
     },
     "licenseUrl": "",
     "projectUrl": "",

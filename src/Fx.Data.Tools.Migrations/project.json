@@ -1,0 +1,22 @@
+﻿{
+    "authors": [ "Fresh Egg" ],
+    "commands": {
+        "Fx.Data.Tools.Migrations": "Fx.Data.Tools.Migrations"
+    },
+    "dependencies": {
+        "Microsoft.Framework.Configuration": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration.Json": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration.EnvironmentVariables": "1.0.0-beta7",
+        "Microsoft.Framework.Configuration.CommandLine": "1.0.0-beta7",
+        "Fx.Data.Contracts": "",
+        "Fx.Data":  ""
+    },
+    "description": "Performs database migrations using migration classes provided by modules.",
+    "frameworks": {
+        "dnx46": { }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "tags": [ "" ],
+    "version": "1.0.0-*"
+}

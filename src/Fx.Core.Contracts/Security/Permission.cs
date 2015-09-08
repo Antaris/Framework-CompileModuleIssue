@@ -5,10 +5,13 @@
 namespace Fx.Security
 {
     using System;
+    using System.Diagnostics;
+
 
     /// <summary>
     /// Represents a permission.
     /// </summary>
+    [DebuggerDisplay("Permission: {Code} ({Name})")]
     public class Permission : IComparable<Permission>, IEquatable<Permission>, IComparable
     {
         private static readonly ValueComparer<Permission> Comparer = new ValueComparer<Permission>(

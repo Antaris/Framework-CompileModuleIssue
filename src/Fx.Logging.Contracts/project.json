@@ -4,7 +4,7 @@
     },
     "description": "Provides base logging contracts",
     "frameworks": {
-        "dnx451": { }
+      "dnx46": { }
     },
     "licenseUrl": "",
     "projectUrl": "",
